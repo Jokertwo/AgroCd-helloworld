@@ -7,9 +7,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/CloudTechDevOps/Kubernetes.git
+    repoURL: https://github.com/Jokertwo/AgroCd-helloworld.git
     targetRevision: HEAD
-    path: day-14-argocd
+    path: hello-world-app
   destination:
     server: https://kubernetes.default.svc
     namespace: myapp

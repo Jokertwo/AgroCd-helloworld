@@ -6,6 +6,9 @@ metadata:
     argocd.argoproj.io/sync-options: Prune=true
 spec:
   template:
+    metadata:
+      labels:
+        job-name: job-test
     spec:
       containers:
         - name: job-test

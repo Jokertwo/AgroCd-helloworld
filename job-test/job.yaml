@@ -2,6 +2,8 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: job-test
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=true
 spec:
   template:
     spec:
